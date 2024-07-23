@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Pad</title>
+  <style>
+    .signature-container { border: 1px solid #ccc; padding: 10px; }
+    .signature-pad { border: 1px solid #000; width: 100%; height: 150px; }
+    .clear-button { margin-top: 10px; }
+    .form-label { display: block; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <div id="signature-container"></div>
+  <script type="module">
+    import SignaturePad from './signature-pad.js';
+
+    const container = document.getElementById('signature-container');
+
+    const signaturePad = new SignaturePad({
+      container: container,
+      label: 'Signature Pad'
+    });
+
+    // Call the onRender method after initialization
+    signaturePad.onRender();
+  </script>
+</body>
+</html>
