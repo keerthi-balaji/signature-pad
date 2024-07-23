@@ -12,12 +12,17 @@
   </style>
 </head>
 <body>
+    <!-- Container to hold the signature pad component -->
   <div id="signature-container"></div>
+
+   <!-- Script to initialize and render the SignaturePad component -->
   <script type="module">
     import SignaturePad from './signature-pad.js';
 
+    // Get the container element where the signature pad will be rendered
     const container = document.getElementById('signature-container');
 
+    // Create a new instance of the SignaturePad component
     const signaturePad = new SignaturePad({
       container: container,
       label: 'Signature Pad'
