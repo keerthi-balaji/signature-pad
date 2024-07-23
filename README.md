@@ -28,7 +28,8 @@ To use the SignaturePad component, you need to have a basic understanding of Jav
     ```
 
 ### Usage
-##Initialize the component:
+## Initialize the component:
+
 Create a new instance of the SignaturePad component and render it in a specified container:
 ```sh
 import SignaturePad from './signaturePad.js';
